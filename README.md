@@ -1,2 +1,4 @@
 # portfolio
-My portfolio website! A static multi-page website w/ TailwindCSS.
+My portfolio website!
+
+A simple static multi-page application.
