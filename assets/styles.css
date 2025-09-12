@@ -1,3 +1,41 @@
+:root {
+    --background-color: #8c00ff73;
+
+    --text-color: #000000;
+    --font-family: 'Segoe UI', Arial, sans-serif;
+    --border-radius: 8px;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+nav {
+    margin: -8px;                       /* override the default 8px margin from <body> */
+    position: sticky;                   /* stays at top while scrolling */
+    top: 0;
+    background-color: black;
+    border-bottom: 1px solid black;   /* line across bottom of block */
+    padding: 0.75rem 1rem;
+    display: flex;                      /* lay out links in a row */
+    gap: 1rem;                          /* space between links */
+    justify-content: flex-end;          /* temporary: place links on right side.
+                                        This will need to be changed when I add my logo. */
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 2rem;
+    border-bottom: 1px solid black;
+}
+
 .card {
     border: 2px solid black;
     padding: 10px;
