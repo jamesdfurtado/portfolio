@@ -1,4 +1,4 @@
-function goToPage(page){
+export function goToPage(page){
     let url = window.location.href;
     console.log(url)
 
