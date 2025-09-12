@@ -9,21 +9,34 @@
     <link rel="stylesheet" href="assets/styles.css"/>
 </head>
 <body>
-    <h1>Welcome to my portfolio!</h1>
-    <em></em>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <h3>My projects</h3>
+    <main>
+        <!-- Home page -->
+        <section id="home">
+            <p> hi im James</p>
+        </section>
 
-    <div class="card-container">
+        <!-- About page -->
+        <section id="about">
+            <p> my skills </p>
+        </section>
 
-        <script type="module">
-            import { createCard } from './components/card.js';
-            const cardContainer = document.querySelector(".card-container");
+        <!-- Projects page-->
+        <section id="projects">
+            <p> here are my projects </p>
+        </section>
 
-            cardContainer.append(createCard("dogs", null, "cats", "pages/mini-ecommerce"));
-            cardContainer.append(createCard("chips", null, "bats"));
-        </script>
-    </div>
+        <!-- Contact page -->
+        <section id="contact">
+            <p> contact me</p>
+        </section>
 
+    </main>
 </body>
 </html>
