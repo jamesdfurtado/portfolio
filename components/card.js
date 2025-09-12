@@ -11,7 +11,7 @@ export function createCard(title="title", imgSrc=null, desc="desc", redirect){
 
     const imageEl = document.createElement("img");
     imageEl.src = imgSrc;
-    imageEl.alt = "deez";
+    imageEl.alt = "img not loaded";
     card.append(imageEl)
 
     const descEl = document.createElement("p");
