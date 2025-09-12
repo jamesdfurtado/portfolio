@@ -10,36 +10,20 @@
 </head>
 <body>
     <h1>Welcome to my portfolio!</h1>
-
     <em></em>
 
     <h3>My projects</h3>
 
     <div class="card-container">
 
-        <script src="components/card.js"></script>
-        <script>
+        <script type="module">
+            import { createCard } from './components/card.js';
             const cardContainer = document.querySelector(".card-container");
 
-            cardContainer.append(createCard("dogs", null, "cats"));
+            cardContainer.append(createCard("dogs", null, "cats", "pages/mini-ecommerce"));
             cardContainer.append(createCard("chips", null, "bats"));
         </script>
     </div>
 
-<!-- temporary removal while I implement card component
-    <div class="card" onclick="goToPage('pages/mini-ecommerce')">
-        <p>Mini ecommerce SPA</p>
-        <img alt="photo"></img>
-        <p>A short description of the project.</p>
-    </div>
-
-    <div class="card">
-        <p>Project 2</p>
-        <img alt="photo"></img>
-        <p>A short description of the project.</p>
-    </div>
--->
-
-    <script src="assets/scripts.js"></script>
 </body>
 </html>
