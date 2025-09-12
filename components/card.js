@@ -2,8 +2,7 @@
 function createCard(title="title", imgSrc=null, desc="desc"){
     const card = document.createElement("div");
     card.className = "card";
-    document.body.append(card);
-
+                                
     const titleEl = document.createElement("p");
     titleEl.innerText = title;
     card.append(titleEl);
@@ -16,6 +15,8 @@ function createCard(title="title", imgSrc=null, desc="desc"){
     const descEl = document.createElement("p");
     descEl.innerText = desc;
     card.append(descEl);
+
+    return card;
 }
 
 /* HTML equivelant

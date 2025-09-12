@@ -15,11 +15,16 @@
 
     <h3>My projects</h3>
 
-    <script src="components/card.js"></script>
-    <script>
-        createCard("dogs", null, "cats");
-        createCard("chips", null, "bats");
-    </script>
+    <div class="card-container">
+
+        <script src="components/card.js"></script>
+        <script>
+            const cardContainer = document.querySelector(".card-container");
+
+            cardContainer.append(createCard("dogs", null, "cats"));
+            cardContainer.append(createCard("chips", null, "bats"));
+        </script>
+    </div>
 
 <!-- temporary removal while I implement card component
     <div class="card" onclick="goToPage('pages/mini-ecommerce')">
