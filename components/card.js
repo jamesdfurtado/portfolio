@@ -1,15 +1,17 @@
+import { goToPage } from '../assets/scripts.js'
 
-function createCard(title="title", imgSrc=null, desc="desc"){
+export function createCard(title="title", imgSrc=null, desc="desc", redirect){
     const card = document.createElement("div");
     card.className = "card";
+    card.onclick = () => goToPage(redirect);
                                 
     const titleEl = document.createElement("p");
     titleEl.innerText = title;
     card.append(titleEl);
 
     const imageEl = document.createElement("img");
-    imageEl.setAttribute("src", imgSrc);
-    imageEl.setAttribute("alt", "photo loading error");
+    imageEl.src = imgSrc;
+    imageEl.alt = "deez";
     card.append(imageEl)
 
     const descEl = document.createElement("p");
